@@ -3,15 +3,24 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "react-native run-android --port=8088",
+    "ios": "react-native run-ios --port=8088",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --port=8088 --reset-cache ",
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^7.3.3",
+    "@react-navigation/elements": "^2.3.1",
+    "@react-navigation/native": "^7.0.19",
+    "@react-navigation/native-stack": "^7.3.3",
     "react": "19.0.0",
-    "react-native": "0.78.1"
+    "react-native": "0.78.1",
+    "react-native-drawer-layout": "^4.1.2",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-reanimated": "^3.17.1",
+    "react-native-safe-area-context": "^5.3.0",
+    "react-native-screens": "^4.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -35,5 +44,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "yarn@3.6.4+sha512.e70835d4d6d62c07be76b3c1529cb640c7443f0fe434ef4b6478a5a399218cbaf1511b396b3c56eb03bc86424cff2320f6167ad2fde273aa0df6e60b7754029f"
 }
